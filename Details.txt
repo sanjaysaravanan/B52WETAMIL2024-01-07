@@ -68,6 +68,7 @@ Task:
   Day 20: React Price Card Task
     https://docs.google.com/document/d/11URBvZUsXT4Sr3YtCuv-5gcOHmkOmX976h-QKcXbWqs/edit
 
+  ** Simple UI no interaction changes **
   Use the below list like structure to generate UI
     [
       {
@@ -104,6 +105,8 @@ Task:
 
   Day 22: React Components Task
     https://docs.google.com/document/d/1erFPRTYe9d3V9QRwmEw8mxOI0ZeQ3_HklTtXwA3Ilco/edit
+
+  ** Simple UI no interaction changes **
 
     InfoCard:
       properties:
