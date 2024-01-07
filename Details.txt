@@ -1,0 +1,126 @@
+
+ 1. Rendering
+
+    React:
+      process of rendering
+
+        ReactDOM.createRoot --> creates virtual DOM from div id root
+
+        then the render method renders the JSX Component APP/Whatever it is\
+        using re-concillation process comparing the new manipuated vdom and the OLD VDOM/Real DOM, if any changes found propagate it to Real DOM
+      
+      conditional rendering:  
+        {<boolean-value-evaluation> && ( JSX Element )}
+        {<boolean-value-evaluation> ? (this JSX Element) : (that JSX Element)}
+
+  3. State --> is value in the rendered JSX that changes during any events/actions
+    Eg: Add to Cart --> Increasing Cart value
+        Like a Post --> Changing Color of the Like Button
+      
+      Pimary in React:
+
+        ****** Do Not Touch Document Object in React ******
+
+        it is CRIME if You do so
+
+      Hooks:
+        Hooking/Connection setup between the JS Memory and JSX Element
+
+        when a hook memory of JS changes( Hook memory value ), JSX automatically re-renders
+
+      rendering & re-rendering parts of react
+
+        Normal JSX Syntax will render only once without any state hooks
+
+  4. Stateful & stateless component
+
+      Stateful component is component which has a state value which changes.
+        Eg: Counter
+
+      Stateless -> Component which does not have a state value rather have only static values
+        Eg: Student, Card
+
+      Props ---> static values passed as property/attributes during rendering
+      State --> a value that changes causing the re-rendering
+  
+  5. states in parent & child component:
+
+      State in Child Component:
+        Simple state handling
+      
+      State in Parent:
+        State handling function should be in parent
+
+        this function has to be passed as a property/attribute to the child component
+
+        this function helps to get data from the child component to the parent component using the arguments or parameters
+
+
+  6. Re-Usable Components:
+      Understand the commanilities of the UI
+
+      
+
+
+
+
+Task:
+  Day 20: React Price Card Task
+    https://docs.google.com/document/d/11URBvZUsXT4Sr3YtCuv-5gcOHmkOmX976h-QKcXbWqs/edit
+
+  Use the below list like structure to generate UI
+    [
+      {
+        subTyep: 'free',
+        title: '0/month',
+        features: [
+          {title: 'Single User', isEnabled: true},
+          {title: '50 GB', isEnabled: false},
+          {title: '100GB', isEnabled: false},
+        ]
+      },
+      {
+        subTyep: 'Plus',
+        title: '9/month',
+        features: [
+          {title: 'Single User', isEnabled: true},
+          {title: '50 GB', isEnabled: true},
+          {title: '100GB', isEnabled: false},
+        ]
+      },
+      {
+        subTyep: 'Pro',
+        title: '49/month',
+        features: [
+          {title: 'Single User', isEnabled: true},
+          {title: '50 GB', isEnabled: true},
+          {title: '100GB', isEnabled: true},
+        ]
+      }
+    ]
+  
+  Day 21: React Shopping Cart Task
+    https://docs.google.com/document/d/1mqZqoxmPlEioKCwVfuOYIUcG2kESrYuocrYO4h9kiRk/edit
+
+  Day 22: React Components Task
+    https://docs.google.com/document/d/1erFPRTYe9d3V9QRwmEw8mxOI0ZeQ3_HklTtXwA3Ilco/edit
+
+    InfoCard:
+      properties:
+        icon: responsive | bootstrap | east-to-use
+        title: string
+        description: string
+    
+    CenterCard:
+      isImage: boolean ( if image only image should come up in the ui )
+
+      isImage: false
+        title: string
+        description: string
+  
+
+    ReviewInfo:
+      props:
+        image: image url
+        name: string
+        description: string
